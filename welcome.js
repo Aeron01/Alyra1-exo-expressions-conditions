@@ -3,8 +3,8 @@ let firstname = "Bob"
 let gender = "male"
 let firstnameLc = firstname.toLocaleLowerCase()
 let genderLc = gender.toLowerCase()
-let msg = firstnameLc === 'bob' && genderLc === 'male' || firstnameLc === 'Alice' && genderLc === 'female' ? `Bonjour ${firstname}, vous êtes entrée sur le chan.` :
-  `Bonjour ${firstname}, vous n'êtes pas autoriser à entrée sur le chan.`
+let msg = firstnameLc === 'bob' && genderLc === 'male' || firstnameLc === 'Alice' && genderLc === 'female' ? `Bonjour ${firstname}, vous êtes entré${gender === "female" ? "e" : ""} sur le chan.` :
+  `Bonjour ${firstname}, vous n'êtes pas autoriser sur ce chan.`
 console.log(`${msg}`)
 
 
